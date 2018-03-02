@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "315666506641",
+    "firebase_url": "https://wearit-2dba9.firebaseio.com",
+    "project_id": "wearit-2dba9",
+    "storage_bucket": "wearit-2dba9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315666506641:android:90efa6345a7d22b6",
+        "android_client_info": {
+          "package_name": "com.example.amr.wearit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315666506641-bpesoh26kjqfcumotg75sehg0bsp1n0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amr.wearit",
+            "certificate_hash": "6adca1a53e52829b03416bba9b73cc33417e8223"
+          }
+        },
+        {
+          "client_id": "315666506641-m9mj1uhvasu5dbec3vvctjgr55cvclkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0HLyCEe19Dc1gnpJgDb4ONH415jGn3JY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315666506641-m9mj1uhvasu5dbec3vvctjgr55cvclkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

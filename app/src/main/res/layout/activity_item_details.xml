@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bs">
+
+
+    <RelativeLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:id="@+id/name_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="15sp"
+            tools:text="Name"
+            android:textColor="@color/fbutton_color_clouds"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/img_item"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:id="@+id/item_availabe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/name_item"
+            android:layout_weight="9"
+            android:padding="12dp"
+            android:text="Available"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio"
+            android:layout_below="@+id/item_availabe">
+
+
+            <RadioButton
+                android:id="@+id/S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_availabe"
+                android:text="S" />
+            <RadioButton
+                android:id="@+id/M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_availabe"
+                android:text="M" />
+            <RadioButton
+                android:id="@+id/L"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_availabe"
+                android:text="L" />
+        </RadioGroup>
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/layout_price"
+            android:layout_below="@+id/radio"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/fbutton_color_clouds"
+                    android:text="PRICE"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:textSize="16sp"
+                    android:textColor="@color/fbutton_color_clouds"
+                    android:hint="PRICE"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price_item" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/quantityLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/layout_price"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/default_gap">
+
+            <TextView
+                android:id="@+id/quantityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="@color/fbutton_color_clouds"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/numberbutton"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    app:backGroundColor="@color/fbutton_color_carrot"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:textSize="10sp"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantityTotal"
+            android:paddingTop="@dimen/default_gap"
+            android:layout_below="@+id/quantityLinearLayout"
+            android:paddingBottom="@dimen/default_gap"
+            android:orientation="horizontal">
+<!--
+            <TextView
+                android:id="@+id/total"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Total"
+                android:textColor="@color/fbutton_color_clouds"
+                />
+-->
+            <TextView
+                android:id="@+id/cost_text_view"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/fbutton_color_clouds"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btncart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quantityTotal"
+            android:layout_gravity="center"
+            android:onClick="addToCart"
+            app:backGroundColor="@color/fbutton_color_carrot"
+            android:text="ADD TO CART" />
+
+    </RelativeLayout>
+</ScrollView>
